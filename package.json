@@ -1,7 +1,7 @@
 {
   "name": "power-kiro",
   "version": "0.0.0-development",
-  "description": "Padrões rigorosos e instruções completas para desenvolvimento com Kiro AI - Inclui Conventional Commits, Docker, e guias de desenvolvimento local",
+  "description": "Padrões rigorosos e instruções completas para desenvolvimento com Kiro AI - Inclui Conventional Commits, Semantic Release, Docker, e guias de desenvolvimento local",
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release"
@@ -14,14 +14,19 @@
     "kiro",
     "ai",
     "standards",
-    "commit",
-    "semantic-release"
+    "commits",
+    "docker",
+    "development",
+    "best-practices",
+    "semantic-release",
+    "conventional-commits"
   ],
-  "author": "",
+  "author": "PrimeFlow Solutions",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@semantic-release/git": "^10.0.1",
     "husky": "^8.0.3",
     "semantic-release": "^22.0.12"
   },

@@ -1,8 +1,8 @@
 ---
-name: Power Kiro
-description: Padrões rigorosos e instruções completas para desenvolvimento com Kiro AI - Inclui Conventional Commits, Docker, e guias de desenvolvimento local
-author: PrimeFlow Solutions
-version: 1.0.0
+name: "power-kiro"
+displayName: "Power Kiro - Development Standards"
+description: "Padrões rigorosos e instruções completas para desenvolvimento com Kiro AI - Inclui Conventional Commits, Semantic Release, Docker, e guias de desenvolvimento local"
+keywords: ["standards", "commits", "docker", "development", "best-practices", "semantic-release", "conventional-commits", "git", "workflow"]
 ---
 
 # Power Kiro
