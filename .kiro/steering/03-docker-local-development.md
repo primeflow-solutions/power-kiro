@@ -27,6 +27,38 @@ inclusion: auto
     └── Dockerfile.dev
 ```
 
+## REGRA CRÍTICA: Recompilar Gateway Após Mudanças
+
+**SEMPRE que modificar arquivos de configuração de serviços, DEVE recompilar e reiniciar o gateway:**
+
+### Quando Recompilar o Gateway
+
+✅ **Após modificar:**
+- `services.yaml` ou `services.dev.yaml`
+- Adicionar novo serviço
+- Modificar URL de serviço
+- Alterar rotas públicas
+- Mudar configurações de timeout
+
+### Comando Obrigatório
+
+```bash
+docker-compose up -d --build gateway
+```
+
+### Verificar Logs
+
+Sempre verificar se o gateway reconheceu as mudanças:
+
+```bash
+docker-compose logs gateway --tail=30
+```
+
+Procure por linhas como:
+```
+registered service name="organizations" url="http://organizations:8083"
+```
+
 ## Comandos Essenciais
 
 ### Iniciar todos os serviços
@@ -147,6 +179,15 @@ docker-compose up -d --build <service-name>
 docker system prune -a
 ```
 
+### Gateway não reconhece novo serviço
+```bash
+# SEMPRE rebuild do gateway após mudanças em services.yaml
+docker-compose up -d --build gateway
+
+# Verificar logs
+docker-compose logs gateway --tail=30
+```
+
 ### Problemas de rede
 ```bash
 # Recriar a rede
@@ -160,5 +201,6 @@ docker-compose up -d
 1. **Sempre use `-d` (detached)** para rodar em background
 2. **Use logs com `-f`** para acompanhar em tempo real
 3. **Rebuild após mudanças em dependências** (go.mod, package.json)
-4. **Não commite senhas** - use .env para desenvolvimento local
-5. **Mantenha volumes limpos** - remova volumes não utilizados periodicamente
+4. **Rebuild gateway após mudanças em services.yaml** (OBRIGATÓRIO)
+5. **Não commite senhas** - use .env para desenvolvimento local
+6. **Mantenha volumes limpos** - remova volumes não utilizados periodicamente
