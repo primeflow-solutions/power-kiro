@@ -1,7 +1,7 @@
 {
   "name": "power-kiro",
   "version": "0.0.0-development",
-  "description": "Padrões e instruções rigorosas para implementações com Kiro AI",
+  "description": "Padrões rigorosos e instruções completas para desenvolvimento com Kiro AI - Inclui Conventional Commits, Docker, e guias de desenvolvimento local",
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release"
