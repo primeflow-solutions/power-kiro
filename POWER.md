@@ -1,3 +1,10 @@
+---
+name: Power Kiro
+description: Padrões rigorosos e instruções completas para desenvolvimento com Kiro AI - Inclui Conventional Commits, Docker, e guias de desenvolvimento local
+author: PrimeFlow Solutions
+version: 1.0.0
+---
+
 # Power Kiro
 
 Padrões rigorosos e instruções completas para desenvolvimento de projetos com Kiro AI.
