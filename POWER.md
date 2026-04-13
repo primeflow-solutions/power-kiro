@@ -29,6 +29,15 @@ Power Kiro é um conjunto abrangente de regras, padrões e guias que garantem qu
 - Templates para adicionar novos serviços
 - Troubleshooting e boas práticas
 
+### Go - Arquitetura Modular
+- Arquitetura modular baseada em domínios
+- Estrutura de 7 arquivos por módulo (simplificada)
+- Repository pattern simplificado (struct ao invés de interface)
+- Templates completos e exemplos práticos
+- Guia de migração de projetos existentes
+- Padrões de CRUD, validação, logs e error handling
+- Escalabilidade para 80+ entidades
+
 ### API Design (Em breve)
 - Padrões de endpoints REST
 - Estrutura de request/response
@@ -63,6 +72,14 @@ cp -r .kiro-powers/power-kiro/.kiro/steering/* .kiro/steering/
 - **03-docker-local-development.md**: Comandos essenciais e arquitetura
 - **04-docker-compose-from-scratch.md**: Como criar do zero
 - **05-docker-add-new-service.md**: Templates para novos serviços
+
+### Git Workflow
+- **06-git-workflow.md**: Fluxo de trabalho com Git e branches
+
+### Go - Arquitetura Modular
+- **07-go-modular-architecture.md**: Padrão completo de arquitetura modular
+- **08-go-modular-examples.md**: Exemplos práticos e casos de uso
+- **09-go-modular-migration.md**: Guia de migração de projetos existentes
 
 ## 🔄 Versionamento
 
