@@ -38,6 +38,13 @@ Power Kiro é um conjunto abrangente de regras, padrões e guias que garantem qu
 - Padrões de CRUD, validação, logs e error handling
 - Escalabilidade para 80+ entidades
 
+### Go - PKG Library
+- Documentação completa de todas as 9 bibliotecas compartilhadas
+- config, database, jwt, logger, middleware, pagination, repository, serviceclient, validator
+- Exemplos de uso para cada pacote
+- Anti-padrões (o que NÃO fazer)
+- Checklist de uso do PKG
+
 ### API Design (Em breve)
 - Padrões de endpoints REST
 - Estrutura de request/response
@@ -80,6 +87,7 @@ cp -r .kiro-powers/power-kiro/.kiro/steering/* .kiro/steering/
 - **07-go-modular-architecture.md**: Padrão completo de arquitetura modular
 - **08-go-modular-examples.md**: Exemplos práticos e casos de uso
 - **09-go-modular-migration.md**: Guia de migração de projetos existentes
+- **10-go-pkg-library.md**: Documentação completa do PKG (9 pacotes)
 
 ## 🔄 Versionamento
 
